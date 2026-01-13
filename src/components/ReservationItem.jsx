@@ -3,6 +3,7 @@ export default function ReservationItem({ reservation, onDelete }) {
     <li style={{ position: "relative" }}>
       <span
         onClick={onDelete}
+        className="delete-review"
         style={{
           position: "absolute",
           right: "10px",

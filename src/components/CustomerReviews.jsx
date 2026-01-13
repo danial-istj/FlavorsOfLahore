@@ -42,12 +42,16 @@ const CustomerReviews = () => {
         {reviews.map((review, index) => (
           <li key={index} className="review-item">
             <span>{review}</span>
-            <button
+            <span
               className="delete-review"
+              style={{
+                cursor: "pointer",
+                fontWeight: "bold",
+              }}
               onClick={() => deleteReview(index)}
             >
               ✖
-            </button>
+            </span>
           </li>
         ))}
       </ul>
